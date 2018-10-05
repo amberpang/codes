@@ -39,4 +39,5 @@ def intToRoman(num):
     return res
 
 num = input()
-print(intToRoman(num))
+
+print(intToRoman(int(num)))
