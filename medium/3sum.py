@@ -34,11 +34,7 @@ class Solution:
                 left = 0 - nums[i]
                 while low < high:
                     if nums[low] + nums[high] == left:
-                        tempList = []
-                        tempList.append(nums[i])
-                        tempList.append(nums[low])
-                        tempList.append(nums[high])
-                        res.append(tempList)
+                        res.append([nums[i],nums[low],nums[high]])
                         while low < high and nums[low] == nums[low+1]:
                             low += 1
                         low += 1
